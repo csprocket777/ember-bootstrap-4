@@ -1,0 +1,120 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "ember-bootstrap-4@git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+        "scope": null,
+        "escapedName": "ember-bootstrap-4",
+        "name": "ember-bootstrap-4",
+        "rawSpec": "git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+        "spec": "git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:mrkirchner/ember-bootstrap-4.git",
+          "sshUrl": "git+ssh://git@github.com/mrkirchner/ember-bootstrap-4.git",
+          "httpsUrl": "git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+          "gitUrl": "git://github.com/mrkirchner/ember-bootstrap-4.git",
+          "shortcut": "github:mrkirchner/ember-bootstrap-4",
+          "directUrl": "https://raw.githubusercontent.com/mrkirchner/ember-bootstrap-4/master/package.json"
+        }
+      },
+      "/Users/chuckshipman/Documents/Cisco_Work/Digitalization/lab_experiments/personal_network_visulizer/personal_network_visualizer"
+    ]
+  ],
+  "_from": "git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+  "_id": "ember-bootstrap-4@0.1.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/ember-bootstrap-4",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "ember-bootstrap-4@git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+    "scope": null,
+    "escapedName": "ember-bootstrap-4",
+    "name": "ember-bootstrap-4",
+    "rawSpec": "git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+    "spec": "git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:mrkirchner/ember-bootstrap-4.git",
+      "sshUrl": "git+ssh://git@github.com/mrkirchner/ember-bootstrap-4.git",
+      "httpsUrl": "git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+      "gitUrl": "git://github.com/mrkirchner/ember-bootstrap-4.git",
+      "shortcut": "github:mrkirchner/ember-bootstrap-4",
+      "directUrl": "https://raw.githubusercontent.com/mrkirchner/ember-bootstrap-4/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "git+https://github.com/mrkirchner/ember-bootstrap-4.git#45dec69ef3949bdcf8ec710884cb09f0916942c6",
+  "_shasum": "96a97249f1bbbea3e361e8611df3d08acf1035c2",
+  "_shrinkwrap": null,
+  "_spec": "ember-bootstrap-4@git+https://github.com/mrkirchner/ember-bootstrap-4.git",
+  "_where": "/Users/chuckshipman/Documents/Cisco_Work/Digitalization/lab_experiments/personal_network_visulizer/personal_network_visualizer",
+  "author": {
+    "name": "Benny Wong",
+    "email": "bwong337@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/bennycwong/ember-bootstrap-4/issues"
+  },
+  "dependencies": {
+    "bootstrap": "^v4.0.0-alpha.6",
+    "broccoli-stew": "^1.0.4",
+    "ember-cli-babel": "^5.1.5"
+  },
+  "description": "The default blueprint for ember-cli addons.",
+  "devDependencies": {
+    "broccoli-asset-rev": "^2.2.0",
+    "ember-cli": "1.13.12",
+    "ember-cli-app-version": "^1.0.0",
+    "ember-cli-dependency-checker": "^1.1.0",
+    "ember-cli-htmlbars": "^1.0.1",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
+    "ember-cli-ic-ajax": "0.2.4",
+    "ember-cli-inject-live-reload": "^1.3.1",
+    "ember-cli-qunit": "^1.0.4",
+    "ember-cli-release": "0.2.8",
+    "ember-cli-sass": "^5.2.0",
+    "ember-cli-sri": "^1.1.0",
+    "ember-cli-uglify": "^1.2.0",
+    "ember-data": "1.13.15",
+    "ember-disable-prototype-extensions": "^1.0.0",
+    "ember-disable-proxy-controllers": "^1.0.1",
+    "ember-export-application-global": "^1.0.4",
+    "ember-try": "~0.0.8"
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "ember-addon": {
+    "configPath": "tests/dummy/config"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "gitHead": "45dec69ef3949bdcf8ec710884cb09f0916942c6",
+  "homepage": "https://github.com/bennycwong/ember-bootstrap-4#readme",
+  "keywords": [
+    "ember-addon"
+  ],
+  "license": "MIT",
+  "name": "ember-bootstrap-4",
+  "optionalDependencies": {},
+  "readme": "# ember-bootstrap-4\n \nThis addon is based off [ember-sass-bootstrap](https://github.com/ef4/ember-sass-bootstrap) by ef4.\n\nThis is an Ember addon that makes\n[Bootstrap 6 alpha](https://github.com/twbs/bootstrap) available in\nyour Ember app. Instead of just importing in the whole library, it\nprovides as much or as little as you need, and it lets you easily\ncustomize Bootstrap's variables.\n\nIt is also bower-dependency-free, by loading bootstrap-sass via npm instead. This avoids the need for it to reach out and mess with your own bower.json file.\n\n## Installation\n\nBootstrap 4 switched from less to sass, so it\nexpects that you also have ember-cli-sass installed.\n\nBootstrap 4 also depends on tether.js. Please install it using bower.\n\n    bower install tether\n    ember install ember-cli-sass\n    ember install ember-bootstrap-4\n\n## Usage: Stylesheets\n\nIf you want all of Bootstraps style, just say:\n\n    @import 'bootstrap';\n\nin your `app.scss` file. You can customize Bootstrap's variables by\nsetting them before importing:\n\n    $brand-primary: #ff0000;\n    @import 'bootstrap';\n\nYou can also choose to import only the specific pieces that you need. For example:\n\n    @import 'bootstrap/buttons';\n\n## Usage: Javascript Plugins\n\nBy default, we will include all of Bootstrap's Javascript in your\napplication. But you can control this from your ember-cli-build.js file:\n\n```js\n  new EmberApp(defaults, {\n    bootstrap: {\n      plugins: ['collapse']\n    }\n  });\n\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennycwong/ember-bootstrap-4.git"
+  },
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember try:testall"
+  },
+  "version": "0.1.4"
+}
